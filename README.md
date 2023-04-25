@@ -195,7 +195,7 @@ If you like this project please drop a review or hit me up for job opportunities
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-
+Original design idea by Cindy Shin in Behance.
 I would like to thank myself and Microverse!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
