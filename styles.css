@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Open+Sans:wght@300&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+.checkers-speakers {
+  width: 750%;
+  height: 75%;
+}
+
+button {
+  background-color: #f3200d;
+  padding: 8px;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+#navbar #hamburger-icon {
+  width: 25px;
+}
+
+.nav-menu {
+  display: none;
+}
+
+#hero {
+  background-color: rgb(247, 247, 248);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  font-weight: 400;
+}
+
+#hero-content {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding-top: 50px;
+  gap: 20px;
+  color: #4d4c4c;
+}
+
+#hero h1 {
+  color: #ec5242;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#hero h1 .main {
+  background-image: url(images/h1-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  line-height: 150%;
+  width: 90%;
+  font-size: 32px;
+}
+
+#hero .info {
+  padding: 1em 0.5em;
+  line-height: 150%;
+  font-size: 13px;
+  width: 85%;
+  height: auto;
+  text-align: justify;
+  border: 4px solid rgb(255, 255, 255);
+}
+
+#hero h2 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#hero #hero-time {
+  font-size: 29px;
+  font-weight: 800;
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+#program {
+  background-image: url("images/program-bg-pattern.png");
+  background-repeat: repeat;
+  background-color: rgb(39, 42, 50);
+  height: auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding-top: 10%;
+}
+
+#program h3 {
+  font-weight: bold;
+}
+
+#program hr {
+  width: 12%;
+  border: 1px solid #f3200d;
+}

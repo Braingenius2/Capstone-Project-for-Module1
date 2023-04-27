@@ -4,29 +4,153 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/50feea315e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
     <title>World Chess Tournament</title>
 </head>
 <body>
     <header>
         <nav id="navbar">
-            <!-- hamburger menu here -->
+            <img id="hamburger-icon" src="images/hamburger-menu-mobile.svg" alt="hamburger-icon">
+            <img id="fide-logo" src="images/logo-fide.svg" alt="">
+            <ul class="nav-menu">
+                <li><a href="#works">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#program">Program</a></li>
+                <li><a href="#guests">Guests</a></li>
+            </ul>
         </nav>
     </header>
     <main>
         <section id="hero">
-                <h3>"Hello! Chess wunderkinds"</h3>
-                <h1>FIDE WORLD CHESS TEEN TOURNAMENT 2023</h1>
+            <div id="hero-content">
+                <h1>
+                    <span>"Hello! Chess wunderkinds" <br></span>
+                    <span class="main">FIDE WORLD CHESS TEEN TOURNAMENT 2023</span>
+                </h1>
                 <p class="info">
                     The historical pinnacle of the FIDE teen tournament decides the two champions to contend for the champions crown. Joins us from Astana, Kazakhstan.
                 </p>
-                <h2>2015.04.25 (TUES) ~ 28 (FRI)</h2>
-                <p>@ Chess hotels, Astana, Kazakhstan</p>  
+                <h2>
+                    <span id="hero-time">2015.04.25 (TUES) ~ 28 (FRI)</span>
+                    <span id="hero-venue">@ Chess hotels, Astana, Kazakhstan</span>   
+                </h2>
+                
+            </div>
+  
         </section>
         <section id="program">
-
+            <h3>Main Program</h3>
+            <hr>
+            <ul>
+                <li>
+                    <i class="program-icon fa-solid fa-chess fa-bounce " style="color: #ff0000;"></i>
+                    <h4 class="program-name" >Games</h4>
+                    <p class="program-description" >The contenders go head to head in a round robin tournament format.</p>
+                </li>
+                <li>
+                    <i class="program-icon fa-solid fa-presentation-screen fa-bounce" style="color: #ff0000;"></i>
+                    <h4 class="program-name" > Exhibition</h4>
+                    <p class="program-description" > Simultaneous Exhibition with GM Daniil Dubov, followed by autograph and photo session.</p>
+                </li>
+                <li>
+                    <i class="program-icon fa-solid fa-clipboard-question fa-bounce" style="color: #ff0000;"></i>
+                    <h4 class="program-name" >Press Conference</h4>
+                    <p class="program-description" ></p>The conference will include insightful discussions on strategy and predictions for the tournament, as well as personal anecdotes and insights into the players' lives off the board</li>
+                <li>                    
+                    <i class="fa-regular fa-industry-windows fa-bounce" style="color: #ff0000;"></i>
+                    <h4 class="program-name" >Skills Workshop</h4>
+                    <p class="program-description" ></p>This will be packed with some great stategies and tricks of the game by the World champion!</li>
+                <li>
+                    <i class="fa-solid fa-briefcase fa-bounce" style="color: #ff0000;"></i>
+                    <h4 class="program-name" >Career</h4>
+                    <p class="program-description" >Showcase of some possible career paths as a professional chess player.</p>
+                </li>
+                <li>
+                    <button id="join">
+                        Join FWC Teen Tournament 2023 
+                    </button>
+                </li>
+            </ul>
         </section>
         <section id="speakers">
-            
+            <h3>Featured Speakers</h3>
+            <hr>
+            <ul>
+                <li>
+                    <figure>
+                        <img class="checkers-speakers" src="images/checkers-mobile.png" alt="back image decoration for speakers image">
+                        <img src="images/ding-liren.jpg" alt="">
+                    </figure>
+                    <div class="speaker-info">
+                        <h4 class="speaker-name">Ding Liren</h4>
+                        <p class="speaker-title">Grandmaster. World chess championship Contender</p>
+                        <hr>
+                        <p> highest rated Chinese chess player in history and is also a three-time Chinese Chess Champion.</p>
+                    </div>
+                </li>
+                <li>
+                    <figure>
+                        <img class="checkers-speakers" src="images/checkers-mobile.png" alt="back image decoration for speakers image">
+                        <img src="images/Hikaru.jpg" alt="">
+                    </figure>
+                    <div class="speaker-info">
+                        <h4 class="speaker-name">Hikaru Nakamura</h4>
+                        <p class="speaker-title">Twitch streamer. Grandmaster. Reigning World Fischer Random Chess Champion.</p>
+                        <hr>
+                        <p>He earned his grandmaster title at the age of 15, the youngest American at the time to do so. With a peak rating of 2816, Nakamura is the tenth-highest rated player in history.</p>
+                    </div>
+                </li>
+                <li>
+                    <figure>
+                        <img class="checkers-speakers" src="images/checkers-mobile.png" alt="back image decoration for speakers image">
+                        <img src="images/Magnus-Carlsen.jpg" alt="">
+                    </figure>
+                    <div class="speaker-info">
+                        <h4 class="speaker-name">Magnus Carlsen</h4>
+                        <p class="speaker-title">Grandmaster. Greatest Chess Player of the century</p>
+                        <hr>
+                        <p>Carlsen has held the number 1 position in the FIDE world chess rankings since 1 July 2011 and trails only Garry Kasparov in time spent as the highest-rated player in the world. His peak rating of 2882 is the highest in history. He also holds the record for the longest unbeaten streak at the elite level in classical chess.</p>
+                    </div>
+                </li>
+                <li>
+                    <figure>
+                        <img class="checkers-speakers" src="images/checkers-mobile.png" alt="back image decoration for speakers image">
+                        <img src="images/naroditsky.jpg" alt="">
+                    </figure>
+                    <div class="speaker-info">
+                        <h4 class="speaker-name">Daniel Naroditsky
+                        <p class="speaker-title">Grandmaster</p>
+                        <hr>
+                        <p>He is an American chess grandmaster, author, and commentator. He published his first chess book at age 14</p>
+                    </div>
+                </li>
+                <li>
+                    <figure>
+                        <img class="checkers-speakers" src="images/checkers-mobile.png" alt="back image decoration for speakers image">
+                        <img src="images/rensch.jpg" alt="">
+                    </figure>
+                    <div class="speaker-info">
+                        <h4 class="speaker-name">Daniel Rensch</h4>
+                        <p class="speaker-title">International master</p>
+                        <hr>
+                        <p>He holds the Arizona state record for youngest national master, at the age of 14.[1] He is the president of American Chess Events LLC[2] and Chief Chess Officer of Chess.com.</p>
+                    </div>
+                </li>
+                <li>
+                    <figure>
+                        <img class="checkers-speakers" src="images/checkers-mobile.png" alt="back image decoration for speakers image">
+                        <img src="images/kasparov.jpg" alt="">
+                    </figure>
+                    <div class="speaker-info">
+                        <h4 class="speaker-name">Gary Kasparov</h4>
+                        <p class="speaker-title">Grandmaster. Longest reigning World champion of recent times</p>
+                        <hr>
+                        <p>He is Russian chess grandmaster, former World Chess Champion (1985 - 2000), political activist and writer. His peak FIDE chess rating of 2851,[3] achieved in 1999, was the highest recorded until being surpassed by Magnus Carlsen in 2013.</p>
+                    </div>
+                </li>
+            </ul>
         </section>
     </main>
     <footer></footer>
