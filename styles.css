@@ -14,6 +14,11 @@ body {
   overflow-y: scroll;
 }
 
+hr {
+  width: 12%;
+  border: 1px solid #f3200d;
+}
+
 .checkers-speakers {
   width: 750%;
   height: 75%;
@@ -117,7 +122,33 @@ button {
   font-weight: bold;
 }
 
-#program hr {
-  width: 12%;
-  border: 1px solid #f3200d;
+#program .programs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 90%;
+}
+
+#program .programs .program-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  height: auto;
+  gap: 20px;
+  padding: 12px;
+}
+
+#program .programs .program-item .program-icon {
+  font-size: 32px;
+}
+
+#speakers {
+  display: flex;
+}
+
+#speakers h3 {
+  font-weight: bold;
 }
