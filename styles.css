@@ -57,6 +57,11 @@ button {
   color: #4d4c4c;
 }
 
+.hero-about h1 {
+  text-align: center;
+  align-items: center;
+}
+
 #hero h1 {
   color: #ec5242;
   display: flex;
@@ -163,8 +168,9 @@ button {
   padding-top: 25px;
 }
 
-#speakers h3 {
-  font-weight: 800;
+.section-header {
+  color: #4d4c4c;
+  font-weight: bold;
 }
 
 #speakers .checkers-bg {
@@ -212,8 +218,129 @@ button {
   color: #f3200d;
 }
 
+.speaker-name {
+  color: #4d4c4c;
+  font-weight: 500;
+}
+
 .speaker-info {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.hero-about {
+  width: 80%;
+}
+
+.hero-about #hero-content {
+  align-items: center;
+}
+
+.info-about {
+  padding: 1em 0.5em;
+  line-height: 150%;
+  font-size: 13px;
+  width: 85%;
+  height: auto;
+  border: 1px solid #4d4c4c2b;
+  text-align: center;
+}
+
+.contact-us {
+  padding: 1em 0.5em;
+  line-height: 150%;
+  font-size: 13px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.contact-us .mail-contact {
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+#logo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 16px;
+  color: #4d4c4c;
+  line-height: 150%;
+  font-size: 13px;
+  margin-bottom: 24px;
+}
+
+.text-b {
+  width: 70%;
+  text-align: center;
+  line-height: 150%;
+  font-size: 13px;
+}
+
+#logo .section-header {
+  width: 50%;
+}
+
+.logo-unveil {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: auto;
+  gap: 6px;
+  border: 1px solid #4d4c4c2b;
+}
+
+.logo-text {
+  width: 85%;
+  text-align: left;
+}
+
+.logo-text > span:nth-child(1) {
+  font-weight: 900;
+  font-size: 24px;
+}
+
+#past {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+#past-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: center;
+  color: white;
+  width: 85%;
+  height: auto;
+}
+
+.past-item1 {
+  background-image: url(images/chess-conference1.jpg);
+  background-color: rgba(255, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  background-size: cover;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.past-item2 {
+  background-image: url(images/chess-conference2.jpg);
+  background-color: rgba(255, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  background-size: cover;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
