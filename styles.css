@@ -344,3 +344,30 @@ button {
   flex-direction: column;
   justify-content: center;
 }
+
+.rights {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 36px;
+  font-size: 10px;
+}
+
+#partners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  background-color: #4d4c4c;
+}
+
+.partner-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+  font-size: 56px;
+  width: 85%;
+}
