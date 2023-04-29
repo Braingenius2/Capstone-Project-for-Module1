@@ -21,21 +21,43 @@ hr {
 
 button {
   background-color: #f3200d;
-  padding: 8px;
+  padding: 24px;
+  border: black;
+  margin-bottom: 32px;
+  color: white;
 }
 
 #navbar {
   display: flex;
   justify-content: space-between;
   padding: 16px;
+  height: 75px;
 }
 
-#navbar #hamburger-icon {
+#navbar #hamburger {
   width: 25px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+#navbar #hamburger-icon.close {
+  transform: rotate(180deg);
 }
 
 .nav-menu {
-  display: none;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 100px 0;
+  text-align: center;
+  transition: left 0.3s ease-in-out;
+}
+
+.nav-menu.show {
+  left: 0;
 }
 
 #hero {
@@ -53,7 +75,7 @@ button {
   flex-direction: column;
   width: 90%;
   padding-top: 50px;
-  gap: 20px;
+  gap: 32px;
   color: #4d4c4c;
 }
 
@@ -157,6 +179,10 @@ button {
 #program .program-description {
   width: 50%;
   font-size: 12px;
+}
+
+#program #join-desktop {
+  display: none;
 }
 
 #speakers {
@@ -353,6 +379,13 @@ button {
   font-size: 10px;
 }
 
+.rights-home {
+  background-color: #4d4c4c;
+  background-color: #2a2a2a;
+  color: white;
+  margin-top: 60px;
+}
+
 #partners {
   display: flex;
   flex-direction: column;
@@ -360,6 +393,10 @@ button {
   gap: 16px;
   padding: 20px;
   background-color: #4d4c4c;
+}
+
+#partners > h3:nth-child(1) {
+  color: white;
 }
 
 .partner-logos {
@@ -370,4 +407,96 @@ button {
   justify-content: center;
   font-size: 56px;
   width: 85%;
+}
+
+@media only screen and (min-width: 768px) {
+  hr {
+    width: 5%;
+  }
+
+  .nav-menu {
+    display: flex;
+    position: static;
+    background: none;
+    height: auto;
+    padding: 0;
+    width: 50%;
+    justify-content: space-between;
+  }
+
+  #navbar {
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+  }
+
+  #navbar #hamburger {
+    display: none;
+  }
+
+  .nav-menu li a {
+    color: #4d4c4c;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-menu li a:hover {
+    color: #f3200d;
+  }
+
+  #campaign {
+    border: 4px solid #f3200d;
+    padding: 8px;
+  }
+
+  #hero-content {
+    padding-top: 110px;
+  }
+
+  #hero-content #hello {
+    font-size: 30px;
+  }
+
+  #hero h1 .main {
+    width: 70%;
+    font-size: 60px;
+  }
+
+  #hero .info {
+    font-size: 1.125em;
+  }
+
+  #hero #hero-time {
+    font-size: 36px;
+  }
+
+  #hero #hero-venue {
+    font-size: 1.25em;
+  }
+
+  #program .programs {
+    flex-direction: row;
+    align-items: stretch;
+    margin-top: 36px;
+  }
+
+  #program .program-item {
+    flex-direction: column;
+  }
+
+  #program .program-description {
+    width: 90%;
+    text-align: center;
+  }
+
+  #program #join {
+    display: none;
+  }
+
+  #program #join-desktop {
+    display: block;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-bottom: 40px;
+  }
 }
