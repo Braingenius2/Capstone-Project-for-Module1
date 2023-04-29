@@ -453,6 +453,7 @@ button {
 
   .nav-menu {
     display: flex;
+    flex-direction: row;
     position: static;
     background: none;
     height: auto;
