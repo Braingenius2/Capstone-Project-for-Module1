@@ -438,6 +438,14 @@ button {
   width: 85%;
 }
 
+.fa-google-pay,
+.fa-old-republic,
+.fa-d-and-d-beyond,
+.fa-free-code-camp,
+.fa-autoprefixer {
+  color: #808080;
+}
+
 @media only screen and (min-width: 768px) {
   hr {
     width: 5%;
