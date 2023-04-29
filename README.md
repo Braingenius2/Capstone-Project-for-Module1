@@ -65,7 +65,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://braingenius2.github.io/Portfolio-website/)
+- [Live Demo Link](https://braingenius2.github.io/Capstone-Project-for-Module1/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
