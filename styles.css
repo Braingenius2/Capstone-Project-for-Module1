@@ -499,4 +499,57 @@ button {
     cursor: pointer;
     margin-bottom: 40px;
   }
+
+  #program h3 {
+    font-size: 24px;
+  }
+
+  .section-header {
+    font-size: 24px;
+  }
+
+  #speaker-list {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .rights-home {
+    justify-content: center;
+  }
+
+  #logo {
+    margin-bottom: 36px;
+    margin-top: 36px;
+    border-bottom: 1px solid #4d4c4c2b;
+    padding-bottom: 36px;
+  }
+
+  .logo-unveil {
+    width: 40%;
+  }
+
+  #past {
+    margin-top: 50px;
+  }
+
+  #past-list {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .past-item1 {
+    padding: 26px;
+    height: 170px;
+  }
+
+  .past-item2 {
+    padding: 26px;
+    height: 170px;
+  }
+
+  .rights {
+    justify-content: center;
+    gap: 50px;
+  }
 }
