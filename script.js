@@ -70,85 +70,88 @@ const speakers = [
   
   ];
 
-  // Dynamically create Speakers section
-  function generateSpeakers () {
-    // get the parent element where the section will be appended
-    const main = document.querySelector('main');
+// Dynamically create Speakers section
+function generateSpeakers () {
+  // get the parent element where the section will be appended
+  const main = document.querySelector('main');
 
-    // create the section element
-    const section = document.createElement('section');
-    section.setAttribute('id', 'speakers');
+  // create the section element
+  const section = document.createElement('section');
+  section.setAttribute('id', 'speakers');
 
-    // create the section header
-    const header = document.createElement('h3');
-    header.setAttribute('class', 'section-header');
-    header.textContent = 'Featured Speakers';
-    section.appendChild(header);
+  // create the section header
+  const header = document.createElement('h3');
+  header.setAttribute('class', 'section-header');
+  header.textContent = 'Featured Speakers';
+  section.appendChild(header);
 
-    // create the hr element
-    const hr = document.createElement('hr');
-    section.appendChild(hr);
+  // create the hr element
+  const hr = document.createElement('hr');
+  section.appendChild(hr);
 
-    // create the ul element
-    const ul = document.createElement('ul');
-    ul.setAttribute('id', 'speaker-list');
-    section.appendChild(ul);
+  // create the ul element
+  const ul = document.createElement('ul');
+  ul.setAttribute('id', 'speaker-list');
+  section.appendChild(ul);
 
-    // loop through the speakers data and create the li elements
-    speakers.forEach(speaker => {
-    // create the li element
-    const li = document.createElement('li');
-    li.setAttribute('class', 'speaker-item');
+  // loop through the speakers data and create the li elements
+  speakers.forEach(speaker => {
+  // create the li element
+  const li = document.createElement('li');
+  li.setAttribute('class', 'speaker-item');
 
-    // create the image box element
-    const imageBox = document.createElement('div');
-    imageBox.setAttribute('class', 'image-box');
-    li.appendChild(imageBox);
+  // create the image box element
+  const imageBox = document.createElement('div');
+  imageBox.setAttribute('class', 'image-box');
+  li.appendChild(imageBox);
 
-    // create the checkers-bg image
-    const checkersBg = document.createElement('img');
-    checkersBg.setAttribute('class', 'checkers-bg');
-    checkersBg.setAttribute('src', speaker.src[0]);
-    checkersBg.setAttribute('alt', speaker.alt);
-    imageBox.appendChild(checkersBg);
+  // create the checkers-bg image
+  const checkersBg = document.createElement('img');
+  checkersBg.setAttribute('class', 'checkers-bg');
+  checkersBg.setAttribute('src', speaker.src[0]);
+  checkersBg.setAttribute('alt', speaker.alt);
+  imageBox.appendChild(checkersBg);
 
-    // create the speaker-img div with background-image
-    const speakerImg = document.createElement('div');
-    speakerImg.setAttribute('class', 'speaker-img');
-    speakerImg.style.backgroundImage = `url(${speaker.src[1]})`;
-    imageBox.appendChild(speakerImg);
+  // create the speaker-img div with background-image
+  const speakerImg = document.createElement('div');
+  speakerImg.setAttribute('class', 'speaker-img');
+  speakerImg.style.backgroundImage = `url(${speaker.src[1]})`;
+  imageBox.appendChild(speakerImg);
 
-    // create the speaker-info div
-    const speakerInfo = document.createElement('div');
-    speakerInfo.setAttribute('class', 'speaker-info');
-    li.appendChild(speakerInfo);
+  // create the speaker-info div
+  const speakerInfo = document.createElement('div');
+  speakerInfo.setAttribute('class', 'speaker-info');
+  li.appendChild(speakerInfo);
 
-    // create the speaker name and title elements
-    const speakerName = document.createElement('h4');
-    speakerName.setAttribute('class', 'speaker-name');
-    speakerName.textContent = speaker.name;
-    const speakerTitle = document.createElement('p');
-    speakerTitle.setAttribute('class', 'speaker-title');
-    speakerTitle.textContent = speaker.title;
-    speakerInfo.appendChild(speakerName);
-    speakerInfo.appendChild(speakerTitle);
+  // create the speaker name and title elements
+  const speakerName = document.createElement('h4');
+  speakerName.setAttribute('class', 'speaker-name');
+  speakerName.textContent = speaker.name;
+  const speakerTitle = document.createElement('p');
+  speakerTitle.setAttribute('class', 'speaker-title');
+  speakerTitle.textContent = speaker.title;
+  speakerInfo.appendChild(speakerName);
+  speakerInfo.appendChild(speakerTitle);
 
-    // create the hr element
-    const speakerHr = document.createElement('hr');
-    speakerInfo.appendChild(speakerHr);
+  // create the hr element
+  const speakerHr = document.createElement('hr');
+  speakerInfo.appendChild(speakerHr);
 
-    // create the speaker description element
-    const speakerDescription = document.createElement('p');
-    speakerDescription.textContent = speaker.description;
-    speakerInfo.appendChild(speakerDescription);
+  // create the speaker description element
+  const speakerDescription = document.createElement('p');
+  speakerDescription.textContent = speaker.description;
+  speakerInfo.appendChild(speakerDescription);
 
-    // append the li element to the ul element
-    ul.appendChild(li);
-    });
+  // append the li element to the ul element
+  ul.appendChild(li);
+  });
 
-    // append the section element to the parent element
-    main.appendChild(section);
+  // append the section element to the parent element
+  main.appendChild(section);
 
+}
+
+  if (document.title === "HomePage - World Chess Tournament") {
+    // Generate the speakers section only if the current page is index.html
+    generateSpeakers()
   }
-
-  generateSpeakers()
