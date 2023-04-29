@@ -65,7 +65,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://braingenius2.github.io/Portfolio-website/)
+- [Live Demo Link](https://braingenius2.github.io/Capstone-Project-for-Module1/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -195,7 +195,7 @@ If you like this project please drop a review or hit me up for job opportunities
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-
+Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07).
 I would like to thank myself and Microverse!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
