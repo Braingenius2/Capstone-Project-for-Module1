@@ -13,7 +13,7 @@ hamburgerIcon.addEventListener('click', toggleMenu);
 // Add click event listeners to the menu items links
 menuItems.querySelectorAll('a').forEach((link) => {
     link.addEventListener('click', () => {
-      // Hide the nav-menu after a link is clicked
-      menuItems.classList.toggle('show');
+        // Hide the nav-menu after a link is clicked
+        menuItems.classList.toggle('show');
     });
   });
