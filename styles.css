@@ -40,11 +40,29 @@ button {
   transition: transform 0.3s ease-in-out;
 }
 
+#hamburger-icon {
+  width: 36px;
+}
+
 #navbar #hamburger-icon.close {
-  transform: rotate(180deg);
+  display: none;
+}
+
+#navbar #cancel-icon {
+  position: absolute;
+  display: none;
+  z-index: 9999;
+  width: 21px;
+}
+
+#navbar #cancel-icon.show {
+  display: block;
 }
 
 .nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
   position: fixed;
   top: 0;
   left: -100%;
@@ -54,6 +72,16 @@ button {
   padding: 100px 0;
   text-align: center;
   transition: left 0.3s ease-in-out;
+  backdrop-filter: blur(10px);
+}
+
+.nav-menu li a {
+  color: #ec5242;
+  padding: 8px;
+}
+
+.nav-menu li #campaign {
+  border: 2px solid #ec5242;
 }
 
 .nav-menu.show {
